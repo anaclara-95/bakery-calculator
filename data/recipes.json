@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "emoji": "🍞",
+    "title": "Pan de Campo Clásico",
+    "category": "Pan",
+    "desc": "El pan de campo tradicional con corteza crujiente y miga tierna.",
+    "time": "3h 30min",
+    "servings": 10,
+    "difficulty": "Fácil",
+    "ingredients": [
+      { "name": "Harina 000", "qty": "500g" },
+      { "name": "Agua tibia", "qty": "320ml" },
+      { "name": "Levadura seca", "qty": "7g" },
+      { "name": "Sal", "qty": "10g" },
+      { "name": "Aceite de oliva", "qty": "30ml" }
+    ],
+    "steps": [
+      "Disolvé la levadura en el agua tibia con una pizca de azúcar. Dejá reposar 10 minutos hasta que espume.",
+      "En un bowl mezclá la harina con la sal. Hacé un hueco en el centro.",
+      "Volcá el agua con levadura y el aceite. Amasá 10 minutos hasta obtener una masa lisa.",
+      "Formá un bollo, cubrí y dejá leudar 1h 30min en lugar cálido.",
+      "Desgasificá, formá el pan y colocalo en fuente enharinada. Leudar 45 min más.",
+      "Hacé cortes en la superficie y horneá a 200°C por 35–40 minutos."
+    ]
+  },
+  {
+    "id": 2,
+    "emoji": "🌿",
+    "title": "Focaccia con Romero",
+    "category": "Focaccia",
+    "desc": "Focaccia italiana esponjosa con hoyuelos profundos, aceite de oliva y romero fresco.",
+    "time": "2h 20min",
+    "servings": 8,
+    "difficulty": "Fácil",
+    "ingredients": [
+      { "name": "Harina 0000", "qty": "400g" },
+      { "name": "Agua tibia", "qty": "300ml" },
+      { "name": "Levadura seca", "qty": "5g" },
+      { "name": "Sal", "qty": "8g" },
+      { "name": "Aceite de oliva extra virgen", "qty": "80ml" },
+      { "name": "Romero fresco", "qty": "2 ramitas" },
+      { "name": "Sal gruesa", "qty": "al gusto" }
+    ],
+    "steps": [
+      "Disolvé la levadura en agua tibia. Mezclá harina y sal, agregá la levadura y 40ml de aceite.",
+      "Amasá hasta obtener una masa blanda y algo pegajosa.",
+      "Cubrí y dejá leudar 1h 30min.",
+      "Volcá en bandeja aceitada. Estirá con los dedos para cubrir la superficie.",
+      "Dejá reposar 30 min más. Hacé los hoyuelos típicos con los dedos.",
+      "Bañá con el aceite restante, distribuí el romero y la sal gruesa.",
+      "Horneá a 220°C unos 20–25 minutos hasta que esté dorada."
+    ]
+  },
+  {
+    "id": 3,
+    "emoji": "🌾",
+    "title": "Pan Integral con Semillas",
+    "category": "Integral",
+    "desc": "Pan de molde integral nutritivo, cargado de semillas y con sabor profundo.",
+    "time": "4h",
+    "servings": 12,
+    "difficulty": "Medio",
+    "ingredients": [
+      { "name": "Harina integral", "qty": "400g" },
+      { "name": "Harina 000", "qty": "100g" },
+      { "name": "Agua tibia", "qty": "350ml" },
+      { "name": "Levadura seca", "qty": "7g" },
+      { "name": "Sal", "qty": "10g" },
+      { "name": "Miel", "qty": "20g" },
+      { "name": "Semillas mixtas", "qty": "80g" },
+      { "name": "Aceite", "qty": "20ml" }
+    ],
+    "steps": [
+      "Mezclá las harinas, la sal y la mitad de las semillas.",
+      "Disolvé levadura y miel en el agua tibia. Incorporá a las harinas junto con el aceite.",
+      "Amasá 12 minutos. Agregá el resto de semillas al final.",
+      "Dejá leudar 1h 30min hasta duplicar volumen.",
+      "Formá el pan en molde engrasado. Segunda levada 45–60 min.",
+      "Horneá a 190°C durante 40–45 minutos."
+    ]
+  },
+  {
+    "id": 4,
+    "emoji": "✨",
+    "title": "Pan de Masa Madre",
+    "category": "Masa Madre",
+    "desc": "Pan de larga fermentación con masa madre activa, corteza gruesa y miga alveolada.",
+    "time": "18h",
+    "servings": 8,
+    "difficulty": "Difícil",
+    "ingredients": [
+      { "name": "Harina 000", "qty": "400g" },
+      { "name": "Harina integral", "qty": "100g" },
+      { "name": "Agua", "qty": "350ml" },
+      { "name": "Masa madre activa", "qty": "100g" },
+      { "name": "Sal", "qty": "10g" }
+    ],
+    "steps": [
+      "Mezclá las harinas con el agua y la masa madre. Autólisis 30–45 min.",
+      "Agregá la sal y amasá o realizá pliegues hasta desarrollar gluten.",
+      "Bulk fermentation 4–6 horas a temperatura ambiente con pliegues cada hora.",
+      "Formá el pan y colocá en banneton. Fermentación en frío 8–12 horas.",
+      "Precalentá horno a 250°C con olla de hierro. Horneá 20 min tapado + 20–25 min destapado."
+    ]
+  },
+  {
+    "id": 5,
+    "emoji": "🥐",
+    "title": "Medialunas de Manteca",
+    "category": "Dulce",
+    "desc": "Las auténticas medialunas porteñas, hojaldradas, dulces y brillosas.",
+    "time": "5h",
+    "servings": 16,
+    "difficulty": "Difícil",
+    "ingredients": [
+      { "name": "Harina 0000", "qty": "500g" },
+      { "name": "Azúcar", "qty": "80g" },
+      { "name": "Sal", "qty": "8g" },
+      { "name": "Levadura seca", "qty": "10g" },
+      { "name": "Leche tibia", "qty": "200ml" },
+      { "name": "Huevos", "qty": "2" },
+      { "name": "Manteca (empaste)", "qty": "200g" },
+      { "name": "Almíbar", "qty": "para pincelar" }
+    ],
+    "steps": [
+      "Hacé la masa con harina, azúcar, sal, levadura, leche y huevos. Amasá y dejá descansar 1 hora.",
+      "Estirá la manteca fría entre papeles. Reservá en heladera.",
+      "Envolvé la manteca en la masa. Realizá 3 pliegues dobles con 30 min de frío entre cada uno.",
+      "Estirá a 4mm y cortá triángulos.",
+      "Enrollá desde la base al vértice, curvá los extremos.",
+      "Dejá leudar 2 horas. Horneá a 200°C por 15–18 min.",
+      "Pincelá inmediatamente con almíbar."
+    ]
+  },
+  {
+    "id": 6,
+    "emoji": "🫓",
+    "title": "Pan Sin Gluten de Arroz",
+    "category": "Sin Gluten",
+    "desc": "Pan esponjoso sin TACC elaborado con harina de arroz y almidón de mandioca.",
+    "time": "2h",
+    "servings": 10,
+    "difficulty": "Fácil",
+    "ingredients": [
+      { "name": "Harina de arroz", "qty": "300g" },
+      { "name": "Almidón de mandioca", "qty": "100g" },
+      { "name": "Goma xántica", "qty": "5g" },
+      { "name": "Levadura seca", "qty": "7g" },
+      { "name": "Sal", "qty": "8g" },
+      { "name": "Aceite", "qty": "30ml" },
+      { "name": "Agua tibia", "qty": "350ml" },
+      { "name": "Huevo", "qty": "1" }
+    ],
+    "steps": [
+      "Mezclá las harinas con la goma xántica y la sal.",
+      "Disolvé la levadura en agua tibia y dejá espumar 5 min.",
+      "Incorporá el agua, aceite y huevo a las harinas. Batí vigorosamente.",
+      "Colocá en molde aceitado e igualá la superficie con mano húmeda.",
+      "Dejá leudar 1 hora.",
+      "Horneá a 200°C durante 40–45 min. Debe sonar hueco al golpear."
+    ]
+  }
+]

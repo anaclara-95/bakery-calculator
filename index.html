@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recetario de Panadería Casera — Bakery</title>
+  <meta name="description" content="Recetas de pan artesanal y calculadora de equivalencias de ingredientes. Convertí tazas, cucharadas y pizcas a gramos y mililitros." />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.1/fonts/remixicon.min.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./assets/icons8-pan-y-centeno-64.png" type="image/x-icon" />
+  <style>
+    :root {
+      --first-color:       hsl(28, 88%, 62%);
+      --first-color-alt:   hsl(28, 84%, 58%);
+      --title-color:       hsl(0, 0%, 95%);
+      --text-color:        hsl(0, 0%, 75%);
+      --text-color-light:  hsl(0, 0%, 65%);
+      --black-color:       hsl(0, 0%, 6%);
+      --body-color:        hsl(0, 0%, 6%);
+      --container-color:   hsl(0, 0%, 10%);
+      --border-color:      hsl(0, 0%, 16%);
+      --body-font:         "Montserrat", sans-serif;
+      --second-font:       "Dancing Script", cursive;
+      --normal-font-size:  .938rem;
+      --small-font-size:   .813rem;
+      --h2-font-size:      1.25rem;
+      --bigger-font-size:  2.4rem;
+      --font-semi-bold:    600;
+      --font-bold:         700;
+      --z-fixed:           100;
+    }
+    @media screen and (min-width: 1150px) {
+      :root {
+        --bigger-font-size: 3.2rem;
+        --h2-font-size:     1.5rem;
+        --normal-font-size: 1rem;
+        --small-font-size:  .875rem;
+      }
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--body-font);
+      font-size: var(--normal-font-size);
+      background-color: var(--body-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    h1, h2, h3 { color: var(--title-color); font-weight: var(--font-bold); }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    button { font-family: var(--body-font); border: none; outline: none; cursor: pointer; }
+
+    .site-header {
+      position: sticky; top: 0; width: 100%; z-index: var(--z-fixed);
+      background-color: hsla(0, 0%, 6%, .92);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .header-inner {
+      max-width: 1120px; margin-inline: auto; padding-inline: 1.5rem;
+      height: 3.75rem; display: flex; align-items: center; justify-content: space-between;
+    }
+    .header-logo {
+      font-family: var(--second-font); font-size: 1.5rem; color: var(--first-color);
+    }
+    .header-nav { display: flex; align-items: center; gap: 1.75rem; }
+    .header-nav a {
+      color: var(--text-color); font-weight: var(--font-semi-bold);
+      font-size: var(--small-font-size); transition: color .3s;
+    }
+    .header-nav a:hover, .header-nav a.active { color: var(--first-color); }
+    .lang-btn {
+      background: transparent; border: 1px solid var(--border-color);
+      color: var(--first-color); padding: .35rem .7rem; border-radius: 4px;
+      font-weight: 600; font-size: .75rem; cursor: pointer;
+    }
+    .lang-btn:hover { border-color: var(--first-color); }
+
+    .hero {
+      padding: 5rem 1.5rem 5.5rem;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at 70% 40%, hsla(28, 88%, 62%, .12) 0%, transparent 55%),
+        var(--container-color);
+      position: relative;
+    }
+    .hero__eyebrow {
+      font-size: var(--small-font-size); font-weight: var(--font-semi-bold);
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--first-color); margin-bottom: .75rem;
+    }
+    .hero h1 {
+      font-family: var(--second-font); font-size: var(--bigger-font-size);
+      line-height: 1.15; margin-bottom: 1rem; color: var(--title-color);
+    }
+    .hero p {
+      color: var(--text-color-light); max-width: 480px; margin: 0 auto 2rem;
+      font-size: var(--normal-font-size);
+    }
+    .hero-btns {
+      display: flex; gap: .85rem; justify-content: center; flex-wrap: wrap;
+    }
+    .button {
+      display: inline-flex; align-items: center; gap: .45rem;
+      background-color: var(--first-color); color: var(--black-color);
+      font-weight: var(--font-semi-bold); font-size: var(--small-font-size);
+      padding: .85rem 1.6rem; transition: background-color .3s;
+    }
+    .button:hover { background-color: var(--first-color-alt); }
+    .button--ghost {
+      background: transparent; color: var(--text-color);
+      border: 1px solid var(--border-color);
+    }
+    .button--ghost:hover { border-color: var(--text-color); color: var(--title-color); }
+
+    .features {
+      max-width: 1120px; margin: 0 auto; padding: 4rem 1.5rem 5rem;
+    }
+    .features-grid {
+      display: grid; grid-template-columns: 1fr; gap: 1.5rem;
+    }
+    @media (min-width: 768px) {
+      .features-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .feature-card {
+      background: var(--container-color);
+      border: 1px solid var(--border-color);
+      padding: 1.75rem 1.5rem;
+      border-radius: 8px;
+      transition: border-color .3s;
+    }
+    .feature-card:hover { border-color: hsl(28, 40%, 30%); }
+    .feature-icon {
+      font-size: 1.75rem; color: var(--first-color); margin-bottom: .85rem;
+    }
+    .feature-card h3 {
+      font-size: var(--h2-font-size); margin-bottom: .5rem;
+    }
+    .feature-card p {
+      color: var(--text-color-light); font-size: var(--small-font-size);
+      line-height: 1.55;
+    }
+
+    .calc-preview {
+      max-width: 720px; margin: 0 auto 4rem; padding: 0 1.5rem;
+    }
+    .calc-preview-box {
+      background: var(--container-color);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.75rem;
+    }
+    .calc-preview-box h2 {
+      font-family: var(--second-font); font-size: 1.75rem;
+      margin-bottom: .4rem; text-align: center;
+    }
+    .calc-preview-box > p {
+      text-align: center; color: var(--text-color-light);
+      font-size: var(--small-font-size); margin-bottom: 1.5rem;
+    }
+    .calc-form {
+      display: grid; grid-template-columns: 1fr 1fr; gap: .85rem;
+    }
+    @media (min-width: 600px) {
+      .calc-form { grid-template-columns: 1fr 1.2fr 1.4fr auto; }
+    }
+    .calc-form label {
+      display: block; font-size: .7rem; text-transform: uppercase;
+      letter-spacing: .06em; color: var(--text-color-light); margin-bottom: .3rem;
+    }
+    .calc-form input, .calc-form select {
+      width: 100%; background: var(--body-color);
+      border: 1px solid var(--border-color); color: var(--title-color);
+      padding: .6rem .75rem; border-radius: 4px; font-size: var(--small-font-size);
+    }
+    .calc-form input:focus, .calc-form select:focus {
+      outline: none; border-color: var(--first-color);
+    }
+    .calc-form .calc-btn-wrap { display: flex; align-items: flex-end; }
+    .calc-result { margin-top: 1.25rem; min-height: 60px; }
+    .calc-result-card {
+      background: hsl(0, 0%, 8%);
+      border: 1px solid var(--border-color);
+      border-radius: 6px; padding: 1rem 1.25rem;
+    }
+    .calc-result-row {
+      display: flex; align-items: center; gap: .75rem;
+      margin-bottom: .4rem; flex-wrap: wrap;
+    }
+    .calc-label { color: var(--text-color-light); font-size: var(--small-font-size); }
+    .calc-arrow { color: var(--first-color); }
+    .calc-value { font-weight: 600; color: var(--title-color); }
+    .calc-value.highlight { color: var(--first-color); font-size: 1.1rem; }
+    .calc-notes {
+      margin-top: .6rem; font-size: .75rem; color: var(--text-color-light);
+      border-top: 1px solid var(--border-color); padding-top: .5rem;
+    }
+    .calc-error { color: #e57373; font-size: var(--small-font-size); }
+    .quick-ref {
+      margin-top: 1.25rem; padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
+    }
+    .quick-ref h4 {
+      font-size: .75rem; text-transform: uppercase; letter-spacing: .08em;
+      color: var(--text-color-light); margin-bottom: .6rem;
+    }
+    .quick-ref ul { display: grid; gap: .35rem; }
+    .quick-ref li {
+      display: flex; gap: .5rem; font-size: .8rem; flex-wrap: wrap;
+    }
+    .quick-ref strong { color: var(--title-color); min-width: 140px; }
+    .quick-ref span { color: var(--text-color-light); }
+
+    .site-footer {
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 1.5rem; text-align: center;
+      color: var(--text-color-light); font-size: var(--small-font-size);
+    }
+    .site-footer a { color: var(--first-color); }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">Bakery</a>
+      <nav class="header-nav">
+        <a href="index.html" class="active" data-i18n="nav_home">Inicio</a>
+        <a href="recipes.html" data-i18n="nav_recipes">Recetario</a>
+        <a href="#calculator" data-i18n="nav_calc">Calculadora</a>
+        <button class="lang-btn" id="langToggle" type="button">EN</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <p class="hero__eyebrow" data-i18n="hero_eyebrow">Recetario casero</p>
+    <h1 data-i18n="hero_title">El arte de<br />hornear en casa</h1>
+    <p data-i18n="hero_sub">Recetas de pan artesanal y una calculadora de equivalencias para que no te equivoques con las medidas.</p>
+    <div class="hero-btns">
+      <a href="recipes.html" class="button" data-i18n="hero_btn_recipes">Ver Recetario</a>
+      <a href="#calculator" class="button button--ghost" data-i18n="hero_btn_calc">Abrir Calculadora</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features-grid">
+      <article class="feature-card">
+        <div class="feature-icon"><i class="ri-book-open-line"></i></div>
+        <h3 data-i18n="feat1_title">Recetas listas</h3>
+        <p data-i18n="feat1_desc">Pan de campo, focaccia, masa madre, medialunas y más. Filtrá por categoría y dificultad.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon"><i class="ri-scales-3-line"></i></div>
+        <h3 data-i18n="feat2_title">Calculadora de medidas</h3>
+        <p data-i18n="feat2_desc">Convertí tazas, cucharadas y pizcas a gramos y mililitros de cualquier ingrediente.</p>
+      </article>
+      <article class="feature-card">
+        <div class="feature-icon"><i class="ri-heart-add-line"></i></div>
+        <h3 data-i18n="feat3_title">Escalá y guardá</h3>
+        <p data-i18n="feat3_desc">Ajustá porciones, marcá favoritos y agregá tus propias recetas.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="calc-preview" id="calculator">
+    <div class="calc-preview-box">
+      <h2 data-i18n="calc_title">Calculadora de equivalencias</h2>
+      <p data-i18n="calc_sub">Convertí medidas de cocina a gramos y mililitros</p>
+
+      <div class="calc-form">
+        <div>
+          <label for="calcAmount" data-i18n="calc_amount">Cantidad</label>
+          <input type="number" id="calcAmount" min="0" step="any" value="1" />
+        </div>
+        <div>
+          <label for="calcUnit" data-i18n="calc_unit">Unidad</label>
+          <select id="calcUnit"></select>
+        </div>
+        <div>
+          <label for="calcIngredient" data-i18n="calc_ingredient">Ingrediente</label>
+          <select id="calcIngredient"></select>
+        </div>
+        <div class="calc-btn-wrap">
+          <button type="button" class="button" id="calcBtn" data-i18n="calc_btn">Calcular</button>
+        </div>
+      </div>
+
+      <div class="calc-result" id="calcResult"></div>
+
+      <div class="quick-ref">
+        <h4 data-i18n="calc_quick">Referencia rápida</h4>
+        <ul id="calcQuickList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p data-i18n="footer_desc">Recetario de panadería casera.<br />Hecho para quienes aman hornear.</p>
+    <p style="margin-top:.75rem"><a href="recipes.html" data-i18n="nav_recipes">Ir al Recetario →</a></p>
+  </footer>
+
+  <script src="./js/lang.js"></script>
+  <script src="./js/calculator.js"></script>
+</body>
+</html>

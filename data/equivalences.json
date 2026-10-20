@@ -1,0 +1,179 @@
+{
+  "units": {
+    "volume": [
+      { "id": "cup", "name_es": "Taza", "name_en": "Cup", "ml": 240 },
+      { "id": "tbsp", "name_es": "Cucharada sopera", "name_en": "Tablespoon (tbsp)", "ml": 15 },
+      { "id": "tsp", "name_es": "Cucharadita de té", "name_en": "Teaspoon (tsp)", "ml": 5 },
+      { "id": "dessert", "name_es": "Cucharada de postre", "name_en": "Dessert spoon", "ml": 10 },
+      { "id": "ml", "name_es": "Mililitro", "name_en": "Milliliter", "ml": 1 },
+      { "id": "pinch", "name_es": "Pizca", "name_en": "Pinch", "ml": 0.3 }
+    ],
+    "weight": [
+      { "id": "g", "name_es": "Gramo", "name_en": "Gram", "g": 1 },
+      { "id": "kg", "name_es": "Kilogramo", "name_en": "Kilogram", "g": 1000 },
+      { "id": "oz", "name_es": "Onza", "name_en": "Ounce", "g": 28.35 }
+    ]
+  },
+  "ingredients": {
+    "agua": {
+      "name_es": "Agua",
+      "name_en": "Water",
+      "density_g_per_ml": 1.0,
+      "common": true,
+      "notes_es": "1 ml de agua ≈ 1 g",
+      "notes_en": "1 ml water ≈ 1 g"
+    },
+    "leche": {
+      "name_es": "Leche",
+      "name_en": "Milk",
+      "density_g_per_ml": 1.03,
+      "common": true,
+      "notes_es": "Densidad ligeramente superior al agua",
+      "notes_en": "Slightly denser than water"
+    },
+    "aceite": {
+      "name_es": "Aceite (oliva / vegetal)",
+      "name_en": "Oil (olive / vegetable)",
+      "density_g_per_ml": 0.92,
+      "common": true,
+      "notes_es": "Más liviano que el agua",
+      "notes_en": "Lighter than water"
+    },
+    "harina": {
+      "name_es": "Harina de trigo (000 / 0000)",
+      "name_en": "Wheat flour",
+      "density_g_per_ml": 0.53,
+      "g_per_cup": 125,
+      "common": true,
+      "notes_es": "1 taza ≈ 125 g (sin compactar)",
+      "notes_en": "1 cup ≈ 125 g (unsifted)"
+    },
+    "harina_integral": {
+      "name_es": "Harina integral",
+      "name_en": "Whole wheat flour",
+      "density_g_per_ml": 0.55,
+      "g_per_cup": 130,
+      "common": true,
+      "notes_es": "1 taza ≈ 130 g",
+      "notes_en": "1 cup ≈ 130 g"
+    },
+    "azucar": {
+      "name_es": "Azúcar blanca",
+      "name_en": "White sugar",
+      "density_g_per_ml": 0.85,
+      "g_per_cup": 200,
+      "common": true,
+      "notes_es": "1 taza ≈ 200 g",
+      "notes_en": "1 cup ≈ 200 g"
+    },
+    "azucar_imp": {
+      "name_es": "Azúcar impalpable / glass",
+      "name_en": "Powdered sugar",
+      "density_g_per_ml": 0.56,
+      "g_per_cup": 120,
+      "common": true,
+      "notes_es": "1 taza ≈ 120 g",
+      "notes_en": "1 cup ≈ 120 g"
+    },
+    "sal": {
+      "name_es": "Sal fina",
+      "name_en": "Fine salt",
+      "density_g_per_ml": 1.2,
+      "g_per_tsp": 6,
+      "common": true,
+      "notes_es": "1 cucharadita ≈ 6 g · 1 pizca ≈ 0.3–0.5 g",
+      "notes_en": "1 tsp ≈ 6 g · 1 pinch ≈ 0.3–0.5 g"
+    },
+    "sal_gruesa": {
+      "name_es": "Sal gruesa / kosher",
+      "name_en": "Coarse / kosher salt",
+      "density_g_per_ml": 0.9,
+      "g_per_tsp": 4.5,
+      "common": true,
+      "notes_es": "Más voluminosa que la sal fina",
+      "notes_en": "More volume than fine salt"
+    },
+    "polvo_hornear": {
+      "name_es": "Polvo para hornear",
+      "name_en": "Baking powder",
+      "density_g_per_ml": 0.9,
+      "g_per_tsp": 4.5,
+      "common": true,
+      "notes_es": "1 cucharadita ≈ 4–5 g",
+      "notes_en": "1 tsp ≈ 4–5 g"
+    },
+    "bicarbonato": {
+      "name_es": "Bicarbonato de sodio",
+      "name_en": "Baking soda",
+      "density_g_per_ml": 1.1,
+      "g_per_tsp": 5.5,
+      "common": true,
+      "notes_es": "1 cucharadita ≈ 5–6 g",
+      "notes_en": "1 tsp ≈ 5–6 g"
+    },
+    "levadura_seca": {
+      "name_es": "Levadura seca",
+      "name_en": "Dry yeast",
+      "density_g_per_ml": 0.8,
+      "g_per_tsp": 3.5,
+      "common": true,
+      "notes_es": "1 cucharadita ≈ 3.5 g · 1 sobre ≈ 7–11 g",
+      "notes_en": "1 tsp ≈ 3.5 g · 1 packet ≈ 7–11 g"
+    },
+    "manteca": {
+      "name_es": "Manteca / mantequilla",
+      "name_en": "Butter",
+      "density_g_per_ml": 0.91,
+      "g_per_cup": 227,
+      "common": true,
+      "notes_es": "1 taza ≈ 227 g · 1 cucharada ≈ 14 g",
+      "notes_en": "1 cup ≈ 227 g · 1 tbsp ≈ 14 g"
+    },
+    "miel": {
+      "name_es": "Miel",
+      "name_en": "Honey",
+      "density_g_per_ml": 1.42,
+      "g_per_cup": 340,
+      "common": true,
+      "notes_es": "Muy densa · 1 taza ≈ 340 g",
+      "notes_en": "Very dense · 1 cup ≈ 340 g"
+    },
+    "cacao": {
+      "name_es": "Cacao en polvo",
+      "name_en": "Cocoa powder",
+      "density_g_per_ml": 0.5,
+      "g_per_cup": 85,
+      "common": false,
+      "notes_es": "1 taza ≈ 85 g",
+      "notes_en": "1 cup ≈ 85 g"
+    }
+  },
+  "quick_reference": {
+    "es": [
+      { "from": "1 taza", "to": "240 ml de líquido (agua, leche)" },
+      { "from": "1 taza de harina", "to": "≈ 125 g" },
+      { "from": "1 taza de azúcar", "to": "≈ 200 g" },
+      { "from": "1 cucharada sopera", "to": "15 ml" },
+      { "from": "1 cucharadita de té", "to": "5 ml" },
+      { "from": "1 cucharada de postre", "to": "≈ 10 ml" },
+      { "from": "1 cucharadita de sal", "to": "≈ 6 g" },
+      { "from": "1 pizca de sal", "to": "≈ 0.3 – 0.5 g" },
+      { "from": "1 cucharadita de polvo de hornear", "to": "≈ 4.5 g" },
+      { "from": "1 cucharada de aceite", "to": "≈ 14 g / 15 ml" },
+      { "from": "1 cucharada de manteca", "to": "≈ 14 g" }
+    ],
+    "en": [
+      { "from": "1 cup", "to": "240 ml liquid (water, milk)" },
+      { "from": "1 cup flour", "to": "≈ 125 g" },
+      { "from": "1 cup sugar", "to": "≈ 200 g" },
+      { "from": "1 tablespoon", "to": "15 ml" },
+      { "from": "1 teaspoon", "to": "5 ml" },
+      { "from": "1 dessert spoon", "to": "≈ 10 ml" },
+      { "from": "1 tsp salt", "to": "≈ 6 g" },
+      { "from": "1 pinch of salt", "to": "≈ 0.3 – 0.5 g" },
+      { "from": "1 tsp baking powder", "to": "≈ 4.5 g" },
+      { "from": "1 tbsp oil", "to": "≈ 14 g / 15 ml" },
+      { "from": "1 tbsp butter", "to": "≈ 14 g" }
+    ]
+  }
+}
